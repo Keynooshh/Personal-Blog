@@ -1,0 +1,9 @@
+{% set page = get_page(path="home/services.md") %}
+  {%include "partials/content.html"%}
+
+<div class="services">
+    {% for item in page.extra.services %}
+      {% set service_name = item.service_name %}
+      {% include "partials/service.html" %}
+    {% endfor %}
+</div>

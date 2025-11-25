@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+<div class="content">
+
+  {% set page = get_page(path="home/welcome.md") %}
+  {%include "partials/content.html"%}
+
+</div>
+
+
+<div class="content">
+  {% include "partials/carousel.html" %}
+</div>
+
+
+<div class="content projects">
+  {% include "partials/projects.html" %}
+</div>
+
+<div class="content">
+
+    {% set page = get_page(path="home/yapping.md") %}
+    {%include "partials/content.html"%}   
+
+</div>
+
+<div class="content">
+    {% include "partials/services.html" %}
+</div>
+
+<div class="content">
+    {% set page = get_page(path="home/moreYapping.md") %}
+    {%include "partials/content.html"%}   
+</div>
+
+
+<div class="content form">
+  {% include "partials/form.html" %}
+</div>
+
+<div class="content">
+  {% include "partials/socials.html" %}
+</div>
+
+{% endblock content %}

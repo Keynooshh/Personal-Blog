@@ -1,0 +1,10 @@
+{% set page = get_page(path="home/projects.md") %}
+{% include "partials/content.html" %}
+<ol>
+  {% for item in page.extra.project_items %}
+      {% set content_text = item.content_text %}
+      {% set external_url = item.external_url %}
+      {% set about = item.about %}
+      {% include "partials/project.html" %}
+    {% endfor %}
+  </ol>

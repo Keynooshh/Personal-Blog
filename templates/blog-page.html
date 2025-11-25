@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<div class="content">
+<h1>{{ page.title }}</h1>
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
+{{ page.content | safe }}
+{% if page.extra and page.extra.image_src %}
+    <img src="{{ page.extra.image_src }}" alt="blog image" class="blogImg">
+{% endif %}
+
+{% if page.extra and page.extra.link %}
+    <a class="blogLink" href="{{page.extra.link}}" target="_blank">{{page.extra.link_text}}</a>
+{% endif %}
+</div>
+ {% endblock content %}

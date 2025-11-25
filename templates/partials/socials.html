@@ -1,0 +1,11 @@
+{% set page = get_page(path="home/socials.md") %}
+{% include "partials/content.html" %}
+
+<div class="socials">
+    {% for item in page.extra.socials %}
+      {% set social_link = item.social_link %}
+      {% set social_name = item.social_name %}
+      {% set social_icon = item.social_icon %}
+      {% include "partials/social.html" %}
+    {% endfor %}
+</div>

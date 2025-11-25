@@ -1,0 +1,29 @@
+    {% set page = get_page(path="home/Uyap.md") %}
+    {% include "partials/content.html" %}
+
+    <form
+        id="kaomojiForm"
+        action="https://www.w3schools.com/action_page.php"
+        method="POST"
+        class="form-group"
+      >
+        <textarea
+          id="messageTextarea"
+          name="message"
+          placeholder="Write your message here..."
+          class="message-input"
+        > <span id="selected"></span> 
+        </textarea>
+
+        <div class="buttonGroup">
+            {% for item in page.extra.emoji %}
+                {% set emoji_data = item.emoji_data %}
+                {% set id = item.id %}
+                {% include "partials/emojiButtons.html" %}
+            {% endfor %}
+          <div></div>
+
+          <button type="submit" class="send-btn">Send➤</button>
+        </div>
+      </form>
+      

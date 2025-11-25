@@ -1,0 +1,23 @@
+{%include "partials/content.html"%} 
+<div class="carousel">
+
+  <div class="carouselGroup">
+    {% set page = get_page(path="home/carousel.md") %}
+
+    {% for item in page.extra.carousel_items %}
+      {% set content_text = item.content_text %}
+      {% set image_src = item.image_src %}
+      {% set content_link = item.content_link %}
+      {% include "partials/carouselItem.html"%}
+    {% endfor %}
+  </div>
+  <div aria-hidden="true" class="carouselGroup">
+    {% for item in page.extra.carousel_items %}
+      {% set content_text = item.content_text %}
+      {% set image_src = item.image_src %}
+      {% set content_link = item.content_link %}
+      {% include "partials/carouselItem.html"%}
+    {% endfor %}
+  </div>
+</div>
+<p id="help">&lt;-choose wisely-&gt;</p>

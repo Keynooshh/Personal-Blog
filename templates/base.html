@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ get_url(path='css/style.css') | safe }}" />
+    <title>Yappy Blog</title>
+  </head>
+
+  <body>
+    {%include "partials/navbar.html" %} {% block content %} {% endblock content
+    %}
+  </body>
+  
+   <div class="footer">
+      <p>Footer</p>
+    </div>
+    
+</html>
+
