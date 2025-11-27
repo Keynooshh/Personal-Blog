@@ -1,14 +1,31 @@
+{% set page = get_page(path="home/carousel.md") %}
 {%include "partials/content.html"%} 
 <div class="carousel">
 
   <div class="carouselGroup">
-    {% set page = get_page(path="home/carousel.md") %}
 
     {% for item in page.extra.carousel_items %}
       {% set content_text = item.content_text %}
       {% set image_src = item.image_src %}
       {% set content_link = item.content_link %}
-      {% include "partials/carouselItem.html"%}
+
+
+
+
+    {% if alt_text %} {% set final_alt_text = alt_text %} {% else %} {% set
+    final_alt_text = content_text ~ ' Image' %} {% endif %}
+
+    <a href="{{content_link}}" class="carouselItem">
+     <div class="carouselImg">
+      <img src="{{ image_src }}" alt="{{ final_alt_text }}" />
+     </div>
+     <span class="carouselText">{{ content_text }}</span>
+    </a>
+
+
+
+
+
     {% endfor %}
   </div>
   <div aria-hidden="true" class="carouselGroup">
@@ -16,7 +33,19 @@
       {% set content_text = item.content_text %}
       {% set image_src = item.image_src %}
       {% set content_link = item.content_link %}
-      {% include "partials/carouselItem.html"%}
+      
+
+    {% if alt_text %} {% set final_alt_text = alt_text %} {% else %} {% set
+    final_alt_text = content_text ~ ' Image' %} {% endif %}
+
+    <a href="{{content_link}}" class="carouselItem">
+     <div class="carouselImg">
+      <img src="{{ image_src }}" alt="{{ final_alt_text }}" />
+     </div>
+     <span class="carouselText">{{ content_text }}</span>
+    </a>
+
+      
     {% endfor %}
   </div>
 </div>

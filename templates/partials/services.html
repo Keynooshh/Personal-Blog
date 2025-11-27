@@ -4,6 +4,10 @@
 <div class="services">
     {% for item in page.extra.services %}
       {% set service_name = item.service_name %}
-      {% include "partials/service.html" %}
+      
+      <div class="service">
+          <span class="loader"></span><span>{{service_name}}</span>
+      </div>
+
     {% endfor %}
 </div>

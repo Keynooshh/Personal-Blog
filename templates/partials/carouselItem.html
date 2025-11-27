@@ -1,9 +1,0 @@
-{% if alt_text %} {% set final_alt_text = alt_text %} {% else %} {% set
-final_alt_text = content_text ~ ' Image' %} {% endif %}
-
-<a href="{{content_link}}" class="carouselItem">
-  <div class="carouselImg">
-    <img src="{{ image_src }}" alt="{{ final_alt_text }}" />
-  </div>
-  <span>{{ content_text }}</span>
-</a>

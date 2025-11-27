@@ -6,6 +6,10 @@
       {% set social_link = item.social_link %}
       {% set social_name = item.social_name %}
       {% set social_icon = item.social_icon %}
-      {% include "partials/social.html" %}
+      
+      <div class="social">
+      <span class="icon" ><img src="{{social_icon}}" class="icon"></span> <a href="{{social_link}}"  >{{social_name}}</a>
+      </div>
+
     {% endfor %}
 </div>

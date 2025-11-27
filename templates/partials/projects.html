@@ -5,6 +5,8 @@
       {% set content_text = item.content_text %}
       {% set external_url = item.external_url %}
       {% set about = item.about %}
-      {% include "partials/project.html" %}
+      
+      <li><a href="{{ external_url }}">{{ content_text }}</a> {{about}}</li>
+
     {% endfor %}
   </ol>

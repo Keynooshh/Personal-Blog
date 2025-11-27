@@ -10,6 +10,5 @@ date = 2019-11-27
 
 if i have 4 hands instead of 2 i would pet 4 cats at the same time instead of 2 and if i had 6 hand i would pet 6 cats at the same time instead of 4. i love petting cats and the more hands i get the more cats i shall pet.
 
-![Image](/Images/whiteCat.gif)
 
-> what the fukc just happend
+{{ resize(path="/Images/whiteCat.gif", width=600, height=400, op="fit", alt="My image") }}

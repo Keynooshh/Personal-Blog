@@ -12,18 +12,21 @@
           name="message"
           placeholder="Write your message here..."
           class="message-input"
-        > <span id="selected"></span> 
-        </textarea>
+        ></textarea>
 
         <div class="buttonGroup">
             {% for item in page.extra.emoji %}
                 {% set emoji_data = item.emoji_data %}
                 {% set id = item.id %}
-                {% include "partials/emojiButtons.html" %}
+
+                <button type="button" class="kaomoji-btn" id="{{id}}" data-kaomoji-val="{{emoji_data}}">
+                {{emoji_data}}
+                </button>
+
             {% endfor %}
           <div></div>
 
-          <button type="submit" class="send-btn">Send➤</button>
+          <button type="submit" id="send-btn">Send➤</button>
         </div>
       </form>
       

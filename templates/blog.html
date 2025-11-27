@@ -1,11 +1,11 @@
 {% extends "base.html" %} {% block content %}
 <div class="content">
-  <h3>{{ section.title }}</h3>
+  <h3>{{ section.title }} <div class="back-btn"><a href="/"><img id="back" src="/Images/Icons/arrowL.png" alt=""></a></div></h3>
   <p>here i will share my weblog</p>
   <ul id="weblogs">
     {% for page in section.pages %}
     <li>
-      <span><img src="/Images/pixelated-alien.png" alt="" /></span>
+      <span class="blogPost" ><img src="/Images/Icons/note.png" alt="" /></span>
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </li>
     {% endfor %}
