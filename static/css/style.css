@@ -93,12 +93,10 @@ body {
 
 /*navbar logo*/
 #yappybara {
-  width: 50px;
   margin: 5px;
   float: left;
   padding: 3px;
   border-radius: 10px;
-  border-bottom: 2px solid var(--ctp-rosewater);
 }
 
 .navbar a:hover,
