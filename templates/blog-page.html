@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block content %}
-<div class="content">
-<h2>{{ page.title }}  <div class="back-btn"><a href="{{ get_url(path='@/blog/_index.md') }}"><img id="back" src="/Images/Icons/arrowL.png" alt=""></a></div> </h2>
+<body style="background-image: linear-gradient(rgba(35, 6, 35, 0.521), rgba(35, 6, 35, 0.521)),url(/Images/cozyCat.gif);background-size:cover; ">
+<div class="content"> 
+<h2>{{ page.title }}</h2>
 
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
 
@@ -14,6 +15,6 @@
 {% if page.extra and page.extra.link %}
     <a class="blogLink" href="{{page.extra.link}}" target="_blank">{{page.extra.link_text}}</a>
 {% endif %}
-</div>
-
+</div>  
+</body> 
  {% endblock content %}

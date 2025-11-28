@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block content %}
+<body style="background-image: linear-gradient(rgba(35, 6, 35, 0.521), rgba(35, 6, 35, 0.521)),url(/Images/cozyCat.gif);background-size:cover; ">
 <div class="content">
-  <h3>{{ section.title }} <div class="back-btn"><a href="/"><img id="back" src="/Images/Icons/arrowL.png" alt=""></a></div></h3>
+  <h3>{{ section.title }}</h3>
   <p>here i will share my weblog</p>
   <ul id="weblogs">
     {% for page in section.pages %}
@@ -11,4 +12,5 @@
     {% endfor %}
   </ul>
 </div>
+</body>
 {% endblock content %}

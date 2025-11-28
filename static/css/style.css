@@ -46,12 +46,17 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background: var(--ctp-red);
+  color: white;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(35, 6, 35, 0.405), rgba(35, 10, 35, 0.405)), url(/Images/.gif);
+  background-image: url(/Images/cafe.gif);
   background-attachment: fixed;
   background-size: cover;
   background-color: var(--ctp-surface1);
@@ -127,6 +132,7 @@ body {
 
 #weblogs {
   list-style-type: none;
+  padding-left: 4%;
 }
 
 #weblogs li {
@@ -179,22 +185,6 @@ body {
 
 .blogLink:hover {
   color: var(--ctp-red);
-}
-
-.back-btn {
-  float: right;
-}
-
-#back {
-  width: 30px;
-  float: right;
-  border-radius: 4px;
-}
-
-#back:hover {
-  background-color: var(--ctp-subtext0);
-  transform: translateY(-3px);
-  transition: all 0.3s ease;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -390,11 +380,6 @@ textarea {
 textarea:focus {
   border-color: var(--ctp-lavender);
   outline: none;
-}
-
-textarea::selection {
-  background: var(--ctp-red);
-  color: white;
 }
 
 .buttonGroup {
