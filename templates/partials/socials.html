@@ -1,5 +1,5 @@
 {% set page = get_page(path="home/socials.md") %}
-{% include "partials/content.html" %}
+<h3>{{ page.title }}</h3>
 
 <div class="socials">
     {% for item in page.extra.socials %}

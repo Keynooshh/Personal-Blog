@@ -1,5 +1,6 @@
-    {% set page = get_page(path="home/Uyap.md") %}
-    {% include "partials/content.html" %}
+{% set page = get_page(path="home/Uyap.md") %}
+<h3>{{ page.title }}</h3>
+{{ page.content | safe }}
 
     <form
         id="kaomojiForm"

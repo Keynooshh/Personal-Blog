@@ -1,5 +1,6 @@
 {% set page = get_page(path="home/carousel.md") %}
-{%include "partials/content.html"%} 
+<h3>{{ page.title }}</h3>
+{{ page.content | safe }}
 <div class="carousel">
 
   <div class="carouselGroup">

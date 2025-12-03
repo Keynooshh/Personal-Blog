@@ -1,9 +1,9 @@
 <div class="navbar">
-  <a href="{{ get_url(path='/') | safe }}"
-    ><img src="/Images/glasses.png" alt="Yappybara" id="yappybara"
+  <a id="yappybara" href="{{ get_url(path='/') | safe }}"
+    ><img src="/Images/glassesW.png" alt="Yappybara" 
   /></a>
   <div>
-    <a href="{{ get_url(path='@/blog/_index.md') }}">Weblog</a>
-    <a href="{{ get_url(path='@/about/_index.md') }}">About Me</a>
+    <a class="navBtn" href="{{ get_url(path='@/blog/_index.md') }}">Weblog</a>
+    <a class="navBtn"  href="{{ get_url(path='@/about/_index.md') }}">About Me</a>
   </div>
 </div>

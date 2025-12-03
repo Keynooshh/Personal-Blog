@@ -39,6 +39,17 @@
   --footer-height: 50px;
 }
 
+/*----------------------------------------------------------------------------*/
+
+/*Font Consola*/
+
+@font-face {
+  font-family: "Consolas";
+  src: url("/Fonts/Consolas.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/*----------------------------------------------------------------------------*/
 
 /*Body style*/
 
@@ -53,6 +64,8 @@
 
 body {
   display: flex;
+  font-family: "Consolas", monospace;
+  font-size: 1.10rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -68,13 +81,15 @@ body {
 /*Navbar style*/
 
 .navbar {
+  display: flex;
   overflow: hidden;
   background-color: var(--ctp-crust);
   position: relative;
   top: 0;
   width: 35%;
   border-radius: 10px;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar div {
@@ -82,8 +97,6 @@ body {
 }
 
 .navbar div a {
-  position: relative;
-  float: right;
   color: var(--ctp-rosewater);
   text-align: center;
   padding: 14px 16px;
@@ -99,7 +112,7 @@ body {
   border-radius: 10px;
 }
 
-.navbar a:hover,
+.navbar .navBtn:hover,
 #yappybara:hover {
   background: var(--ctp-rosewater);
   color: black;
