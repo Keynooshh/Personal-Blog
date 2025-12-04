@@ -28,9 +28,7 @@ A fast and minimal personal blog built with **Zola**, using custom **HTML** and 
 ├── content/        # Blog posts in Markdown
 ├── templates/      # HTML templates
 ├── static/
-│   ├── Fonts/ 			# Fonts
-│   ├── Images/ 		# Images
-│   │   ├── Icons/		# Icons
+│   ├── assets/         # Images, fonts, etc.
 │   ├── css/        	# Stylesheet
 │   └── js/         	# JS file  
 ├── config.toml     	# Zola configuration
