@@ -89,6 +89,6 @@ The generated site will appear in `/public`.
 ----------
 ##  **Contributions**
 
-Suggestions and improvements are welcome — feel free to open an issue or PR.
+Suggestions and improvements are welcome — feel free to open an issue or Pull request.
 
 
