@@ -47,8 +47,8 @@ A fast and minimal personal blog built with **Zola**, using custom **HTML** and 
 ### 2. Clone this project
 
 ```sh
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Keynooshh/Personal-Blog
+cd Personal-Blog
 ```
 
 ### 3. Start the development server
